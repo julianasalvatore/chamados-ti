@@ -31,7 +31,7 @@ app.post("/enviar-chamado", async (req, res) => {
   try {
     await resend.emails.send({
       from: "suporte@escolaeleva.com.br",
-      to: [`it.support@inspirededu.com`, email],
+      to: [`juliana.lira@inspirededu.com`, email],
       subject: assunto,
       html: corpoHTML,
     });

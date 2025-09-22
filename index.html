@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +7,65 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Banner responsivo -->
+  <div class="banner">
+    <img src="banner.jpg" alt="Banner da Head Office Brasil">
+  </div>
+
   <div class="container">
     <h1>Abertura de Chamado TI - Head Office Brasil</h1>
+
     <form id="chamadoForm">
-      
       <label for="nome">Seu nome e sobrenome *</label>
       <input type="text" id="nome" name="nome" required>
 
-      <label for="email">Seu e-mail *</label>
+      <label for="email">Escreva seu e-mail *</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="escola">Escolha a escola *</label>
+      <label for="escola">Escolha a escola/unidade *</label>
       <select id="escola" name="escola" required>
-        <option value="">Selecione...</option>
-        <optgroup label="Eleva">
-          <option value="Eleva - Unidade 1">Unidade 1</option>
-          <option value="Eleva - Unidade 2">Unidade 2</option>
+        <option value="">-- Selecione --</option>
+
+        <optgroup label="Centro Educacional Leonardo da Vinci">
+          <option value="Centro Educacional Leonardo da Vinci/ES">Centro Educacional Leonardo da Vinci/ES</option>
         </optgroup>
-        <optgroup label="Gurilandia">
-          <option value="Gurilandia - Unidade 1">Unidade 1</option>
-          <option value="Gurilandia - Unidade 2">Unidade 2</option>
+
+        <optgroup label="Escola Eleva">
+          <option value="Escola Eleva Barra da Tijuca/RJ">Escola Eleva Barra da Tijuca/RJ</option>
+          <option value="Escola Eleva Botafogo/RJ">Escola Eleva Botafogo/RJ</option>
+          <option value="Escola Eleva Brasília/DF">Escola Eleva Brasília/DF</option>
+          <option value="Escola Eleva Recife/PE">Escola Eleva Recife/PE</option>
+          <option value="Escola Eleva São Paulo/SP">Escola Eleva São Paulo/SP</option>
+          <option value="Escola Eleva Urca/RJ">Escola Eleva Urca/RJ</option>
         </optgroup>
+
+        <optgroup label="Gurilândia">
+          <option value="Gurilândia Federação">Gurilândia Federação</option>
+          <option value="Gurilândia Pituba">Gurilândia Pituba</option>
+        </optgroup>
+
         <optgroup label="Land">
-          <option value="Land - Unidade 1">Unidade 1</option>
-        </optgroup>
-        <optgroup label="Leonardo Da Vinci">
-          <option value="Leonardo Da Vinci - Unidade 1">Unidade 1</option>
+          <option value="Land Federação">Land Federação</option>
+          <option value="Land Pituba">Land Pituba</option>
         </optgroup>
       </select>
 
       <label for="setor">Setor *</label>
       <select id="setor" name="setor" required>
-        <option value="">Selecione...</option>
+        <option value="">-- Selecione --</option>
         <option value="Admissões">Admissões</option>
         <option value="Administração">Administração</option>
         <option value="Finanças">Finanças</option>
         <option value="Jurídico">Jurídico</option>
         <option value="Marketing">Marketing</option>
-        <option value="RH">RH</option>
-        <option value="TI">TI</option>
+        <option value="RH - Recursos Humanos">RH - Recursos Humanos</option>
+        <option value="TI - Tecnologia da Informação">TI - Tecnologia da Informação</option>
       </select>
 
       <label for="equipamento">Equipamento Envolvido *</label>
       <select id="equipamento" name="equipamento" required>
-        <option value="">Selecione...</option>
+        <option value="">-- Selecione --</option>
         <option value="Carregador">Carregador</option>
         <option value="Impressora">Impressora</option>
         <option value="Internet">Internet</option>
@@ -59,16 +74,17 @@
         <option value="Notebook">Notebook</option>
         <option value="Teclado">Teclado</option>
         <option value="Pacote Office">Pacote Office</option>
-        <option value="Programa específico">Programa específico</option>
+        <option value="Programa Específico">Programa Específico</option>
         <option value="Outro">Outro</option>
       </select>
 
-      <label for="problema">Descrição do problema *</label>
+      <label for="problema">Descrição do Problema *</label>
       <textarea id="problema" name="problema" required></textarea>
 
       <button type="submit">Enviar Chamado</button>
     </form>
-    <div id="mensagem"></div>
+
+    <p id="mensagem"></p>
   </div>
 
   <script src="script.js"></script>
